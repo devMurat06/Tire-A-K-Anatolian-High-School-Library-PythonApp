@@ -1,66 +1,78 @@
-# 📚 Tire ŞAİK Anadolu Lisesi - Kütüphane Yönetim Sistemi
+# 📚 Tire ŞAİK Anatolian High School - Library Management System
 
-Bu proje, **Tire Şehit Albay İbrahim Karaoğlanoğlu (ŞAİK) Anadolu Lisesi** kütüphanesinin dijitalleşmesi ve kitap takip süreçlerinin hızlandırılması amacıyla geliştirilmiş, kapsamlı bir kütüphane yönetim yazılımıdır.
+This is a comprehensive Library Management System developed for **Tire Şehit Albay İbrahim Karaoğlanoğlu (ŞAİK) Anatolian High School** to digitize library processes and streamline book tracking.
 
-Okulumdaki kitap ödünç alma ve iade süreçlerini modernize etmek ve kağıt israfını önlemek amacıyla bir 10. sınıf öğrencisi olarak bu projeyi hayata geçirdim.
+As a 10th-grade student, I developed this project to modernize the borrowing/return system in my school and reduce paper waste through a digital-first approach.
 
-## ✨ Özellikler
+---
 
-* **🛡️ Çift Giriş Paneli:** Öğretmenler (Yönetici) ve Öğrenciler için özelleştirilmiş, şifre korumalı erişim ekranları.
-* **📷 Barkod Entegrasyonu:** `pyzbar` ve `OpenCV` kullanarak kitap barkodlarını kamera ile tarama ve saniyeler içinde işlem yapma.
-* **📇 Barkod Oluşturma:** Sisteme yeni eklenen kitaplar için otomatik barkod üretme ve çıktı alma desteği.
-* **📊 Veritabanı Yönetimi:** SQLite ile verilerin yerel ve güvenli bir şekilde saklanması.
-* **📂 Excel & CSV Entegrasyonu:** Öğrenci listelerini Excel'den toplu aktarma veya mevcut verileri rapor olarak dışarı aktarma.
-* **🎨 Modern Arayüz:** `CustomTkinter` kütüphanesi ile geliştirilmiş, karanlık mod destekli ve kullanıcı dostu tasarım.
-* **📈 Gelişmiş Takip:** En çok kitap okuyan öğrenciler, popüler kitaplar ve teslim süresi yaklaşan kitapların otomatik takibi.
+## ✨ Features
 
-## 🛠️ Kullanılan Teknolojiler
+* **🛡️ Dual Authentication:** Secure login panels for both Teachers (Admins) and Students.
+* **📷 Barcode Integration:** Real-time barcode scanning using `pyzbar` and `OpenCV` via camera.
+* **📇 Barcode Generation:** Automatically generate and export barcodes for newly added books.
+* **📊 Database Management:** Reliable and fast local data storage using SQLite.
+* **📂 Excel & CSV Support:** Batch import student lists from Excel and export library reports.
+* **🎨 Modern UI:** A sleek, user-friendly interface with Dark Mode support powered by `CustomTkinter`.
+* **📈 Advanced Analytics:** Track most-read books, active readers, and overdue returns automatically.
 
-Proje tamamen **Python** dili kullanılarak geliştirilmiştir:
+---
 
-* **GUI (Arayüz):** `CustomTkinter`, `Tkinter`
-* **Veritabanı:** `sqlite3`
-* **Görüntü İşleme:** `OpenCV (cv2)`, `pyzbar`
-* **Veri Yönetimi:** `openpyxl` (Excel), `csv`
-* **Görselleştirme:** `Pillow (PIL)`
-* **Barkod:** `python-barcode`
+## 🛠️ Tech Stack
 
-## 🚀 Kurulum ve Çalıştırma
+This project is built entirely with **Python**, utilizing the following libraries:
 
-Projeyi kendi bilgisayarınızda çalıştırmak için:
+* **GUI:** `CustomTkinter`, `Tkinter`
+* **Database:** `sqlite3`
+* **Computer Vision:** `OpenCV (cv2)`, `pyzbar`
+* **Data Handling:** `openpyxl` (Excel), `csv`
+* **Imaging:** `Pillow (PIL)`
+* **Barcode:** `python-barcode`
 
-1.  **Depoyu Klonlayın:**
+---
+
+## 🚀 Installation & Setup
+
+To run this project locally, follow these steps:
+
+1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/kullanici-adin/tire-saik-kutuphane.git](https://github.com/kullanici-adin/tire-saik-kutuphane.git)
-    cd tire-saik-kutuphane
+    git clone [https://github.com/your-username/tire-saik-library.git](https://github.com/your-username/tire-saik-library.git)
+    cd tire-saik-library
     ```
 
-2.  **Gerekli Kütüphaneleri Yükleyin:**
+2.  **Install Dependencies:**
     ```bash
     pip install customtkinter opencv-python pyzbar pillow openpyxl python-barcode
     ```
 
-3.  **Uygulamayı Başlatın:**
+3.  **Run the Application:**
     ```bash
     python library_app.py
     ```
 
-> **Önemli Not:** Barkod okuma fonksiyonu için bilgisayarınızda aktif bir kamera bulunmalıdır. macOS kullanıcıları `brew install zbar` komutu ile ek bağımlılığı kurmalıdır.
+> **Note:** A working webcam is required for the barcode scanning feature. For macOS users, ensure `zbar` is installed via Homebrew: `brew install zbar`.
 
-## 📸 Ekran Görüntüleri
+---
 
-| Giriş Ekranı | Yönetici Paneli | Kitap Ekleme |
+## 📸 Screenshots
+
+| Login Screen | Admin Dashboard | Book Management |
 | :---: | :---: | :---: |
-| ![Giriş](https://via.placeholder.com/300x200?text=Giris+Ekrani) | ![Panel](https://via.placeholder.com/300x200?text=Yonetim+Paneli) | ![Ekleme](https://via.placeholder.com/300x200?text=Kitap+Islemleri) |
-*(Kendi ekran görüntülerini eklediğinde buradaki linkleri güncelleyebilirsin)*
+| ![Login](https://via.placeholder.com/300x200?text=Login+Screen) | ![Dashboard](https://via.placeholder.com/300x200?text=Admin+Dashboard) | ![Management](https://via.placeholder.com/300x200?text=Book+Management) |
+*(Update these links with your own screenshots once uploaded)*
 
-## 👨‍💻 Geliştirici
+---
 
-**[Adın Soyadın]**
-* Tire Şehit Albay İbrahim Karaoğlanoğlu Anadolu Lisesi - 10. Sınıf Öğrencisi
-* [GitHub Profil Linkin]
-* [E-posta Adresin]
+## 👨‍💻 Developer
 
-## 📜 Lisans
+**[Your Name & Surname]**
+* 10th Grade Student at Tire Şehit Albay İbrahim Karaoğlanoğlu Anatolian High School
+* [Your GitHub Profile Link]
+* [Your Email Address]
 
-Bu proje eğitim amaçlı geliştirilmiştir ve **MIT Lisansı** altında lisanslanmıştır.
+---
+
+## 📜 License
+
+Public
